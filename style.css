@@ -21,8 +21,26 @@ body {
 
 .stats-container {
     display: flex;
+    align-items: center;
+
 }
 
+.stats-container:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 30px lightblue;
+}
+.game-name {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.alert-text{
+    color: red;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 1.5;
+}
 .stats-card {
     background-color: #a8b0bc;
     border-radius: 7px;
@@ -32,7 +50,9 @@ body {
     text-align: center;
 }
 
-#num-contributions, #total-raised, #num-games {
+#num-contributions,
+#total-raised,
+#num-games {
     font-size: 50px;
 }
 
